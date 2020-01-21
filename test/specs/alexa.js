@@ -7,5 +7,10 @@ describe('Alexa', () => {
         Home.searchBox.setValue('Alexa')
         Home.searchSubmitBtn.click()
     })
+    it('select the 3er product listed', () => {
+        element = Result.resultElement(3)
+        elementText = element.getText()
+        element.click()
+    })
 })
 

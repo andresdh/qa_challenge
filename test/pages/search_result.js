@@ -1,8 +1,8 @@
 'use strict'
 
 class Result {
-  get resultElement() {
-    return $("div[@class='sg-row']//h2/a")[2]
+  resultElement(x) {
+    return $$("//div[@class='sg-row']//h2/a")[x]
   }
 }
 
